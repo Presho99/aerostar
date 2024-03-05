@@ -1,6 +1,6 @@
 import React from 'react';
 import { start } from 'repl';
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar';
 
 import './App.css';
 
