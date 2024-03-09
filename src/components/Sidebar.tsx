@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartBar,
@@ -19,6 +19,7 @@ interface SidebarProps {
 }
 
 const Sidebar = () => {
+  const [activeNav, setActiveNav] = useState("Statistics")
   const navItems: { name: string; icon: any }[] = [
     { name: "Dashboard", icon: faChartBar },
     { name: "Flights", icon: faPlane },
@@ -26,6 +27,10 @@ const Sidebar = () => {
     { name: "Statistics", icon: faChartLine },
     { name: "Settings", icon: faCog },
   ];
+
+  const handleNavSelect = (selectedItem: string) => {
+setActiveNav(selectedItem)
+  }
 
   return (
     <div className="sidebar">
@@ -40,7 +45,7 @@ const Sidebar = () => {
       </div>
       <ul className="nav">
         {navItems.map((item, index) => (
-          <li key={index} className="nav-itself">
+          <li key={index} className={activeNav === item.name ? 'active' : ""} onClick={() => handleNavSelect(item.name)}>
             <FontAwesomeIcon icon={item.icon} className="nav-icon" />
             <p className="nav-name">{item.name}</p>
           </li>
@@ -69,9 +74,9 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="map">
+      {/* <div className="map">
         <WorldMap />
-      </div>
+      </div> */}
     </div>
   );
 };
