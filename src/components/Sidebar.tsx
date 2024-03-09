@@ -1,6 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartBar, faPlane, faWallet, faChartLine, faCog } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChartBar,
+  faPlane,
+  faWallet,
+  faChartLine,
+  faCog,
+} from "@fortawesome/free-solid-svg-icons";
 import "../components/Sidebar.css";
 import WorldMap from "../components/WorldMap";
 import one from "../assets/one.webp";
@@ -13,12 +19,12 @@ interface SidebarProps {
 }
 
 const Sidebar = () => {
-  const navItems: {name: string; icon: any}[] = [
-  {name: "Dashboard", icon: faChartBar},
-  {name: "Flights", icon: faPlane},
-  {name: "Wallet", icon: faWallet},
-  {name: "Statistics", icon: faChartLine},
-  {name: "Settings", icon: faCog},
+  const navItems: { name: string; icon: any }[] = [
+    { name: "Dashboard", icon: faChartBar },
+    { name: "Flights", icon: faPlane },
+    { name: "Wallet", icon: faWallet },
+    { name: "Statistics", icon: faChartLine },
+    { name: "Settings", icon: faCog },
   ];
 
   return (
@@ -32,16 +38,19 @@ const Sidebar = () => {
           <p className="email">omondiprecious@gmail.com</p>
         </div>
       </div>
-      <ul>
+      <ul className="nav">
         {navItems.map((item, index) => (
-          <li key={index}>
-              <FontAwesomeIcon icon={item.icon}/>
-              {item.name}
-              </li>
+          <li key={index} className="nav-itself">
+            <FontAwesomeIcon icon={item.icon} className="nav-icon" />
+            <p className="nav-name">{item.name}</p>
+          </li>
         ))}
       </ul>
       <div className="users">
-        <h3>Active Users</h3>
+        <div className="users-title">
+          <h3>Active Users</h3>
+        </div>
+
         <div className="circles">
           <div className="circle">
             <img src={one} />

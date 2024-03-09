@@ -1,8 +1,10 @@
 .sidebar{
     /* padding: 20px; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #3F5856;
 }
 
 .profile{
@@ -13,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px 0;
 }
 
 .profile-text{
@@ -52,38 +55,82 @@
 
 
 .users{
-    background-color: blue;
+    background-color: #3F5856;
     width: 100%;
     display: flex;
     flex-direction: column;
     height: 10%;
     justify-content: center;
     align-items: center;
+}
+
+.users-title{
+    /* background-color: aqua; */
+    width: 100%;
+    padding-left: 65px;
     
+}
+
+.users-title h3{
+    color: #C79B39;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav{
+    background-color: #3F5856;
+    margin-top: 0;
+    padding: 10px 0 10px 8px;
+    margin-bottom: 0;
+}
+
+.nav li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    height: 40px;
+    margin-bottom: 8px;
+    padding: 0 35px;
+}
+
+.nav-icon{
+    margin-right: 20px;
+    color: #C79B39;
+}
+
+.nav-name{
+text-transform: uppercase;
+color: #D9E3E2;
 }
 
 .circles{
 position: relative;
     display: flex;
-
+/* background-color: red; */
     width: 220px;
     height: 60px;
+    align-items: center;
+    /* background-color: #3F5856; */
+    
 }
 
 .circle{
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
-    background-color: pink;
+    background-color: #C79B39;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #D9E3E2;
     
 }
 .circle img{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     object-fit: cover;
 
@@ -107,6 +154,8 @@ position: relative;
 
 .map{
     height: 10%;
+    background-color: #3F5856;
+    margin-top: 20px;
 }
 
 
