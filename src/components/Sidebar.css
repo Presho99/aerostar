@@ -1,0 +1,62 @@
+.users{
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circles{
+position: relative;
+    display: flex;
+
+    width: 220px;
+    height: 60px;
+}
+
+.circle{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.circle img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+/* .circle:nth-child(1){
+    left: 50;
+} */
+.circle:nth-child(2){
+    left: 40px;
+}
+.circle:nth-child(3){
+    left: 80px;
+}
+.circle:nth-child(4){
+    left: 120px;
+}
+.circle:nth-child(5){
+    left: 160px;
+}
+
+.map{
+    height: 10%;
+}
+
+
+
+
+
