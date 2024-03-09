@@ -1,3 +1,56 @@
+.sidebar{
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile{
+    background-color: #3B5350;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-text{
+    line-height: 2px;
+  color: #D9E3E2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.name{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.email{
+    font-size: 14px;
+}
+.dp{
+
+    width: 80px;
+    height: 80px;
+    /* border-radius: 50%; */
+}
+
+.dp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+
+
 .users{
     background-color: blue;
     width: 100%;
