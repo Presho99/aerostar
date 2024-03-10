@@ -38,5 +38,19 @@
   /* background-color: pink; */
   height: 40%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-left{
+  background-color: red;
+  height: 100%;
+  width: 65%;
+}
+
+.middle-right{
+  background-color: aqua;
+  height: 100%;
+  width: 31%;
 }
 

@@ -2,6 +2,8 @@ import React from 'react';
 import { start } from 'repl';
 import Sidebar from './components/Sidebar';
 import Flights from './components/Flights';
+import Histogram from './components/Histogram';
+import Receipts from './components/Receipts';
 
 import './App.css';
 
@@ -15,7 +17,14 @@ function App() {
     <div className='top'>
       <Flights/>
     </div>
-    <div className='middle'></div>
+    <div className='middle'>
+      <div className='middle-left'>
+        <Receipts/>
+      </div>
+      <div className='middle-right'>
+        <Histogram/>
+      </div>
+    </div>
     <div className='bottom'></div>
   </div>
     </div>
