@@ -6,22 +6,24 @@ const Histogram: React.FC = () => {
   const chartRef = useRef<Chart>()
   useEffect(() => {
     const data = {
-      labels: ['Flight 1', 'Flight 2', 'Flight 3', 'Flight 4', 'Flight 5'],
+      labels: ['F1', 'F2', 'F3', 'F4', 'F5'],
       datasets: [
         {
           label: 'Economy',
-          data: [150, 120, 180, 200, 160],
-          backgroundColor: '#eee'
+          data: [110, 80, 150, 130, 113],
+          backgroundColor: '#3F5756'
         },
         {
           label: 'Business',
-          data: [50, 20, 60, 40, 60],
-          backgroundColor: 'blue'
+          data: [60, 40, 60, 50, 50],
+          backgroundColor: '#D9E3E2'
+          
         },
         {
           label: 'First',
-          data: [10, 9, 12, 12, 16],
-          backgroundColor: 'red'
+          data: [30, 19, 12, 22, 20],
+          backgroundColor: '#BE953C'
+         
         },
       ]
     }
