@@ -1,7 +1,9 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useRef} from 'react'
 import Chart from 'chart.js/auto'
+import '../components/Histogram.css'
 
 const Histogram: React.FC = () => {
+  const chartRef = useRef<Chart>()
   useEffect(() => {
     const data = {
       labels: ['Flight 1', 'Flight 2', 'Flight 3', 'Flight 4', 'Flight 5'],
@@ -51,7 +53,10 @@ const Histogram: React.FC = () => {
 
     const ctx = document.getElementById('stackedBarChart') as HTMLCanvasElement
     if (ctx) {
-      new Chart (ctx, {
+      if(chartRef.current){
+        chartRef.current.destroy()
+      }
+     chartRef.current = new Chart (ctx, {
         type: 'bar',
         data: data,
         options: options,
@@ -59,8 +64,8 @@ const Histogram: React.FC = () => {
     }
   }, [])
   return (
-    <div>
-      <canvas id="stackedBarChart" width="300" height="400" ></canvas>
+    <div className='histogram'>
+      <canvas id="stackedBarChart" width="300" height="230" ></canvas>
     </div>
   )
 }
