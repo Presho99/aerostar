@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import Flights from './components/Flights';
 import Histogram from './components/Histogram';
 import Receipts from './components/Receipts';
+import Doughnut from './components/Doughnut';
 
 import './App.css';
 
@@ -25,7 +26,15 @@ function App() {
         <Histogram/>
       </div>
     </div>
-    <div className='bottom'></div>
+    <div className='bottom'>
+      <div className='bottom-left'>
+        <Doughnut/>
+      </div>
+      <div className='bottom-right'>
+        
+      </div>
+      
+    </div>
   </div>
     </div>
   );
