@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {Suspense, lazy} from 'react';
 import { start } from 'repl';
 import Sidebar from './components/Sidebar';
 import Flights from './components/Flights';
-import Histogram from './components/Histogram';
+// import Histogram from './components/Histogram';
 import Receipts from './components/Receipts';
-import Doughnut from './components/Doughnut';
+// import Doughnut from './components/Doughnut';
 
 import './App.css';
+const LazyHistogram = lazy(() => import('./components/Histogram'))
+
+const LazyDoughnut = lazy(() => import('./components/Doughnut'))
+
 
 function App() {
   return (
@@ -23,12 +27,17 @@ function App() {
         <Receipts/>
       </div>
       <div className='middle-right'>
-        <Histogram/>
+      <Suspense fallback={<div>Loading...</div>}>
+          <LazyHistogram/>
+        </Suspense>
       </div>
     </div>
     <div className='bottom'>
       <div className='bottom-left'>
-        <Doughnut/>
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyDoughnut/>
+        </Suspense>
+        {/* <Doughnut/> */}
       </div>
       <div className='bottom-right'>
         
