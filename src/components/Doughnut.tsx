@@ -35,6 +35,10 @@ const Doughnut: React.FC = () => {
               title: {
                 display: true,
                 text: 'Baggage Handling',
+                
+                font: {
+                  size: 19
+                }
                
               }
             },
