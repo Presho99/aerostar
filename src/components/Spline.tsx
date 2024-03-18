@@ -38,6 +38,10 @@ const Spline: React.FC<SplineProps> = ({
       "July",
     ];
 
+    const addNoise = (data: number[]) => {
+        return data.map((value) => value + Math.random() * 60 -5)
+    }
+
     chartInstance = new Chart(ctx, {
       type: "line",
       data: {
@@ -45,14 +49,14 @@ const Spline: React.FC<SplineProps> = ({
         datasets: [
           {
             label: routeData1.routeName,
-            data: routeData1.onTimePerfomance,
+            data: addNoise(routeData1.onTimePerfomance),
             borderColor: "#425A58",
             tension: 0.8,
             fill: false,
           },
           {
             label: routeData2.routeName,
-            data: routeData2.onTimePerfomance,
+            data: addNoise(routeData2.onTimePerfomance),
             borderColor: "#C09534",
             tension: 0.8,
             fill: false,
@@ -81,7 +85,7 @@ const Spline: React.FC<SplineProps> = ({
   }, [routeData1, routeData2]);
 
   return <div className="spline">
-      <canvas ref={chartRef} width="300" height="120"/>
+      <canvas ref={chartRef} width="310" height="120"/>
   </div>;
 };
 

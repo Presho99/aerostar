@@ -55,7 +55,7 @@ const Doughnut: React.FC = () => {
   return (
     <div className="pie">
         {/* <h2>Baggage Handling</h2> */}
-      <canvas ref={chartRef} style={{ width: "200px", height: "250px" }} />
+      <canvas ref={chartRef} style={{ width: "200px", height: "253px" }} />
     </div>
   );
 };
