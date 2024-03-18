@@ -8,8 +8,37 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
+.semi{
+    background-color: #D9E3E2;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+
+.one{
+    left: -10px;
+    top: 90px;
+}
+
+.two{
+    left: -10px;
+    top: 155px;
+}
+
+.three{
+    right: -10px;
+    top: 90px;
+}
+
+.four{
+    right: -10px;
+    top: 155px;
+}
+
+
 .receipt-title{
-    /* background-color: brown; */
+   
     height: 30px;
     margin-bottom: 25px;
 }
@@ -28,19 +57,19 @@
 }
 
 .receipt-table{
-    /* background-color: blue; */
+ 
     font-size: 14px;
     
 }
 
 .receipt-table table{
-    /* background-color: pink; */
+ 
     width: 100%;
 
 }
 
 thead{
-    /* background-color: aquamarine; */
+    
     width: 100%;
    
     
@@ -126,6 +155,13 @@ tr.member-box{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: red;
+}
+
+td.member-box{
+
+    position: relative;
 }
 
 .member-circle{
@@ -137,5 +173,10 @@ tr.member-box{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
+    
 }

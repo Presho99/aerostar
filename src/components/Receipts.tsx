@@ -5,7 +5,10 @@ import one from "../assets/one.webp";
 const Receipts: React.FC = () => {
   return (
     <div className="receipts">
-      <div></div>
+      <div className="semi one"></div>
+      <div className="semi two"></div>
+      <div className="semi three"></div>
+      <div className="semi four"></div>
       <div className="receipt-title">
         <h3>Last Trips</h3>
         <p>Overview of recent activities</p>
