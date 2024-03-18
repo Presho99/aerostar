@@ -16,7 +16,7 @@ const Histogram: React.FC = () => {
         {
           label: 'Business',
           data: [60, 40, 60, 50, 50],
-          backgroundColor: '#D9E3E2'
+          backgroundColor: '#42AC9E'
           
         },
         {
@@ -31,8 +31,12 @@ const Histogram: React.FC = () => {
     const options= {
       plugins: {
         title: {
-          display: true,
+          display: false,
           text: 'Seat Availability by Cabin Class',
+          font: {
+            size: 17
+          },
+          className: 'chart-title'
         },
       },
       scales: {
@@ -67,7 +71,10 @@ const Histogram: React.FC = () => {
   }, [])
   return (
     <div className='histogram'>
-      <canvas id="stackedBarChart" width="300" height="230" ></canvas>
+      <h3 className='hist-title'>Seat Availability</h3>
+      <canvas id="stackedBarChart" width="300" height="200" >
+        
+      </canvas>
     </div>
   )
 }

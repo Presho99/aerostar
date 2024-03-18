@@ -67,7 +67,7 @@ const Spline: React.FC<SplineProps> = ({
           responsive: true,
           plugins: {
               title: {
-                  display: true,
+                  display: false,
                   text: 'Route Performance'
               },
               legend: {
@@ -85,7 +85,8 @@ const Spline: React.FC<SplineProps> = ({
   }, [routeData1, routeData2]);
 
   return <div className="spline">
-      <canvas ref={chartRef} width="310" height="120"/>
+     <h3 className='hist-title'>Route Perfomance</h3>
+      <canvas ref={chartRef} width="310" height="100"/>
   </div>;
 };
 

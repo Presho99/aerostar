@@ -33,7 +33,7 @@ const Doughnut: React.FC = () => {
             maintainAspectRatio: false,
             plugins: {
               title: {
-                display: true,
+                display: false,
                 text: 'Baggage Handling',
                 
                 font: {
@@ -54,8 +54,8 @@ const Doughnut: React.FC = () => {
   });
   return (
     <div className="pie">
-        {/* <h2>Baggage Handling</h2> */}
-      <canvas ref={chartRef} style={{ width: "200px", height: "253px" }} />
+        <h3 className="dough-title">Baggage Handling</h3>
+      <canvas ref={chartRef} style={{ width: "200px", height: "233px" }} ></canvas>
     </div>
   );
 };

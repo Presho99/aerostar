@@ -2,7 +2,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     border-radius: 20px;
-    color: #3B5350;
+    position: relative;
+    padding-top: 40px;
+display: flex;
+/* flex-direction: column; */
     background-color: #F5F5F5;
 
+}
+
+.dough-title{
+    position: absolute;
+  top: 0px;
+    margin-bottom: 0;
+    font-size: 17px;
+    color: #3B5350;
+    height: 5px;
 }
