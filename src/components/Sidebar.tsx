@@ -13,6 +13,7 @@ import one from "../assets/one.webp";
 import two from "../assets/two.webp";
 import three from "../assets/three.jpeg";
 import four from "../assets/four.jpeg";
+import prof from '../assets/prof.jpg'
 
 interface SidebarProps {
   onSelect: (selectedItem: string) => void;
@@ -36,11 +37,11 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="profile">
         <div className="dp">
-          <img src={two} />
+          <img src={prof} />
         </div>
         <div className="profile-text">
           <p className="name">Precious Omondi</p>
-          <p className="email">omondiprecious@gmail.com</p>
+          <p className="email">preciouso@gmail.com</p>
         </div>
       </div>
       <ul className="nav">

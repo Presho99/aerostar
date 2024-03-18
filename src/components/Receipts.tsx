@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/Receipts.css";
 import one from "../assets/one.webp";
+import prof from '../assets/prof.jpg'
 
 const Receipts: React.FC = () => {
   return (
@@ -26,10 +27,10 @@ const Receipts: React.FC = () => {
           <tbody>
             <tr>
               <td className="member-profile above">
-                <img src={one} />
+                <img src={prof} />
                 <div className="member-name">
                   <p className="main-name">Precious Omondi</p>
-                  <p className="small-name">preshomondi@gmail.com</p>
+                  <p className="small-name">preciouso@gmail.com</p>
                 </div>
               </td>
               <td className="above">Qatar</td>
@@ -42,16 +43,16 @@ const Receipts: React.FC = () => {
             </tr>
             <tr>
               <td className="member-profile">
-                <img src={one} />
+                <img src={prof} />
                 <div className="member-name">
                   <p className="main-name">Precious Omondi</p>
-                  <p className="small-name">preshomondi@gmail.com</p>
+                  <p className="small-name">preciouso@gmail.com</p>
                 </div>
               </td>
               <td>France</td>
               <td className="member-box">
                 <div className="member-circle">
-                  <p>5</p>
+                  <p>1</p>
                 </div>
               </td>
               <td>33k</td>
