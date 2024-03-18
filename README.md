@@ -9,6 +9,9 @@ The Aerostar dashboard is designed to provide a comprehensive overview of variou
 - **Chart.js**: JavaScript library for creating interactive charts and graphs.
 - **CSS**: Cascading Style Sheets for styling and layout customization.
 
+## Demo
+  ![](https://github.com/Presho99/aerostar/blob/master/aerostar.gif)
+
 ## Getting Started 
 
 To run the Aerostar Airlines Dashboard locally:
