@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartBar,
@@ -8,7 +8,7 @@ import {
   faCog,
 } from "@fortawesome/free-solid-svg-icons";
 import "../components/Sidebar.css";
-import WorldMap from "../components/WorldMap";
+
 import one from "../assets/one.webp";
 import two from "../assets/two.webp";
 import three from "../assets/three.jpeg";
@@ -19,7 +19,7 @@ interface SidebarProps {
 }
 
 const Sidebar = () => {
-  const [activeNav, setActiveNav] = useState("Statistics")
+  const [activeNav, setActiveNav] = useState("Statistics");
   const navItems: { name: string; icon: any }[] = [
     { name: "Dashboard", icon: faChartBar },
     { name: "Flights", icon: faPlane },
@@ -29,8 +29,8 @@ const Sidebar = () => {
   ];
 
   const handleNavSelect = (selectedItem: string) => {
-setActiveNav(selectedItem)
-  }
+    setActiveNav(selectedItem);
+  };
 
   return (
     <div className="sidebar">
@@ -45,7 +45,11 @@ setActiveNav(selectedItem)
       </div>
       <ul className="nav">
         {navItems.map((item, index) => (
-          <li key={index} className={activeNav === item.name ? 'active' : ""} onClick={() => handleNavSelect(item.name)}>
+          <li
+            key={index}
+            className={activeNav === item.name ? "active" : ""}
+            onClick={() => handleNavSelect(item.name)}
+          >
             <FontAwesomeIcon icon={item.icon} className="nav-icon" />
             <p className="nav-name">{item.name}</p>
           </li>
@@ -74,9 +78,6 @@ setActiveNav(selectedItem)
           </div>
         </div>
       </div>
-      {/* <div className="map">
-        <WorldMap />
-      </div> */}
     </div>
   );
 };
